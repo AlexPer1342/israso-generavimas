@@ -21,12 +21,12 @@ from reportlab.lib import colors
 # ============================================================
 # Konfigūracija
 # ============================================================
-st.set_page_config(page_title="Mokinių PDF generatorius", layout="centered")
-st.title("🎓 PDF generatorius kiekvienam mokiniui iš Excel")
+st.set_page_config(page_title="Mokinių pasiekimų išrašo generatorius", layout="centered")
+st.title("🎓 Mokinių pasiekimų išrašo generatorius")
 
 st.write(
-    "Įkelkite suvestinę tokio formato, kaip pavyzdyje: viršuje informacinės eilutės, "
-    "antraštė su „Eil. Nr.“ ir „Pavardė, vardas“, žemiau — dalykų pavadinimai."
+    "Įkelkite ManoDienyno suvestinę XLSX formatu"
+
 )
 
 # Pastovi šrifto vieta (1) – kaip nurodėte
@@ -264,7 +264,7 @@ def make_student_pdf(
     )
 
     story = []
-    story.append(Paragraph("Mokinio pasiekimų įrašas", title_style))
+    story.append(Paragraph("Mokinio pasiekimų išrašas į mokinio asmens bylą", title_style))
     if school:
         story.append(Paragraph(f"Mokykla: <b>{school}</b>", normal))
     if klasė:
