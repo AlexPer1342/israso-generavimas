@@ -30,7 +30,7 @@ st.write(
 )
 
 # Pastovi šrifto vieta (1) – kaip nurodėte
-USER_FIXED_FONT_PATH = "/Users/aleksejperzhu/Desktop/israso-generavimas/DejaVuSerif.ttf"
+USER_FIXED_FONT_PATH = "DejaVuSerif.ttf"
 # Pastovi šrifto vieta (2) – bandymas rasti šalia app.py
 LOCAL_FONT_PATH = os.path.join(os.path.dirname(__file__), "DejaVuSerif.ttf")
 
